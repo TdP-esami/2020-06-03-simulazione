@@ -50,7 +50,7 @@ public class Player {
 
 	@Override
 	public String toString() {
-		return playerID + " - " + name;
+		return playerID + " " + name;
 	}
 	
 	
