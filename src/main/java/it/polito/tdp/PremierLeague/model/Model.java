@@ -105,13 +105,13 @@ public class Model {
 			int degree = this.getDegree(partial);
 			if(degree > this.bestDegree) {
 				dreamTeam = new ArrayList<>(partial);
-				bestDegree = k;
+				bestDegree = degree;
 			}
 			return;
 		}
 		
 		for(Player p : players) {
-			if(!dreamTeam.contains(p)) {
+			if(!partial.contains(p)) {
 				partial.add(p);
 				//i "battuti" di p non possono più essere considerati
 				List<Player> remainingPlayers = new ArrayList<>(players);
